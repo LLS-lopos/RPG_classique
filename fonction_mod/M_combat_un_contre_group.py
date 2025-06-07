@@ -13,7 +13,7 @@ def combat_un_contre_group(hero, ennemy: list):
 
         # Vérifier si tous les ennemis sont KO
         if len(adver_list) <= 0: return print("Tous les ennemis sont KO !")
-        affichage_texte(menu_combat)
+        affichage_texte(menu_combat, " Action ")
         choix = input("-> ")
         if choix == "1":
             # Afficher les ennemis disponibles pour l'attaque avec leur index

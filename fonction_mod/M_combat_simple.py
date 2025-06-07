@@ -10,7 +10,7 @@ def combat_simple(hero, ennemi):
             if i.ko is True:
                 return
         print(f"{ennemi.nom} - PV: {"💚" * ennemi.pv}, ⚔️: {ennemi.att}")
-        affichage_texte(menu_combat)
+        affichage_texte(menu_combat, " Action ")
         choix = input("->")
         if choix == "1":
             hero.attaque(ennemi)

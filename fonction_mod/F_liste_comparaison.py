@@ -52,11 +52,13 @@ def equipe_grand_vers_petit(a: list, b: list):
     # Maintenant, 'ordre_de_tour' contient les objets personnages triés par vitesse (décroissante).
     # Vous pouvez utiliser cette liste pour la séquence de combat.
     # Exemple : Afficher l'ordre des tours
-    print("\nOrdre des tours (par vitesse décroissante):")
+    #print("\nOrdre des tours (par vitesse décroissante):")
     for tourPerso in ordre_de_tour:
         nom_perso = getattr(tourPerso, 'nom', 'Personnage inconnu')  # On récupère l'attribut 'nom' des classes/sous_classe 'perso' dans la liste ordre_de_tour
         vitesse_perso = getattr(tourPerso, 'vit', 'N/A')
-        print(f"- {nom_perso} (Vitesse: {vitesse_perso})")
+        #print(f"- {nom_perso} (Vitesse: {vitesse_perso})")
+
+    return ordre_de_tour
 
 def equipe_petit_vers_grand(a: list, b: list):
     liste_element = a + b
@@ -69,7 +71,6 @@ def equipe_petit_vers_grand(a: list, b: list):
             perso_vivant.append([perso.vit, perso])
         else:  # Gérer les cas où un combattant n'a pas d'attribut 'vit' (par exemple, enregistrer ou sauter)
             perso_exeption.append(perso)
-    print(f"Charac_sorted : {perso_vivant}")
 
     liste_vitesse = []
     for info in perso_vivant: liste_vitesse.append(info[0])  # Extraire uniquement les vitesses pour le tri
@@ -91,11 +92,13 @@ def equipe_petit_vers_grand(a: list, b: list):
     # Maintenant, 'ordre_de_tour' contient les objets personnages triés par vitesse (croissant).
     # Vous pouvez utiliser cette liste pour la séquence de combat.
     # Exemple : Afficher l'ordre des tours
-    print("\nOrdre des tours (par vitesse croissante):")
+    #print("\nOrdre des tours (par vitesse croissante):")
     for tourPerso in ordre_de_tour:
         nom_perso = getattr(tourPerso, 'nom', 'Personnage inconnu')  # On récupère l'attribut 'nom' des classes/sous_classe 'perso' dans la liste ordre_de_tour
         vitesse_perso = getattr(tourPerso, 'vit', 'N/A')
-        print(f"- {nom_perso} (Vitesse: {vitesse_perso})")
+        #print(f"- {nom_perso} (Vitesse: {vitesse_perso})")
+
+    return ordre_de_tour
 
 if __name__ == "__main__":
     from random import randint

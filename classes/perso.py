@@ -84,12 +84,12 @@ class Personnage:
             old_val_exp = self.valeur_exp
             self.niv += 1
             self.exp = 0
-            self.exp_max *= random.uniform(1.2, 1.6)
+            self.exp_max *= random.uniform(1.1, 1.3)
             arrondir_entier_superieur(self.exp_max)
             self.exp_max = int(self.exp_max)
-            self.valeur_exp += randint(4, 12)
-            self.att += randint(0, 5)
-            self.vit += randint(0, 4)
+            self.valeur_exp += randint(2, 6)
+            self.att += randint(0, 4)
+            self.vit += randint(0, 3)
             print(
                 f"{self.nom} gagne un niveau"
                 f"\nNIVEAU      : {old_niv} --> {self.niv}"
@@ -123,3 +123,8 @@ class Personnage:
 
     def __repr__(self):
         return f"{self.nom}, {self.pv}, {self.att}, {self.vit}, {self.ko}"
+
+if __name__ == "__main__":
+    ludo = Personnage("Ludo", 50, 3, 4)
+    for i in range(6):
+        ludo.niveau_sup()
