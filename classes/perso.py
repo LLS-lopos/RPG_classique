@@ -1,12 +1,17 @@
-from random import randint
+import random
+from random import randint, uniform
+from classes.objet.classique.herbe import HerbeMedicinal1
+from fonction_mod.F_mathematique import arrondir_entier_superieur
 
 
-class personnage:
-    def __init__(self, nom: str, pv: int, att: int, ko: bool=False, val_exp: int=3):
+class Personnage:
+    def __init__(self, nom: str, pv: int, att: int, vit: int, ko: bool=False, val_exp: int=3):
         super().__init__()
         self.nom = nom
         self.pv = pv
+        self.pv_max = pv
         self.att = att
+        self.vit = vit
         self.ko = ko
         self.valeur_exp = val_exp
 
@@ -14,6 +19,23 @@ class personnage:
         self.exp_max = 100
         self.niv = 0
         self.niv_max = 20
+
+        self.sac = []
+        self.capaciter_max = 10
+
+        self.equipement = {
+            "arme principal": None,  # arme lourde
+            "arme secondaire": None,  # arme légère
+            "bouclier": None,  # armurerie
+            "chapeau": None,  # Vêtement/armurerie
+            "vet_haut": None,  # Vêtement/armurerie
+            "vet_bas": None,  # Vêtement/armurerie
+            "gant": None,  # Vêtement/armurerie
+            "chaussure": None,  # Vêtement/armurerie
+            "accesoire primaire": None,  # bague/bracelet/collier/anneaux/amulette
+            "accesoire secondaire": None,  # bague/bracelet/collier/anneaux/amulette
+            "sac": None,  # sac à dos pour l'inventaire
+        }
 
     def attaque(self, cible):
         cible.pv -= self.att
@@ -56,21 +78,48 @@ class personnage:
             n_niveau = 1
         while n_niveau:
             old_niv = self.niv
+            old_att = self.att
+            old_vit = self.vit
             old_exp_max = self.exp_max
             old_val_exp = self.valeur_exp
             self.niv += 1
             self.exp = 0
-            self.exp_max += randint(50, 200)
+            self.exp_max *= random.uniform(1.2, 1.6)
+            arrondir_entier_superieur(self.exp_max)
+            self.exp_max = int(self.exp_max)
             self.valeur_exp += randint(4, 12)
+            self.att += randint(0, 5)
+            self.vit += randint(0, 4)
             print(
                 f"{self.nom} gagne un niveau"
                 f"\nNIVEAU      : {old_niv} --> {self.niv}"
+                f"\nATTAQUE     : {old_att} --> {self.att}"
+                f"\nVITESSE     : {old_vit} --> {self.vit}"
                 f"\nEXP MAX     : {old_exp_max} --> {self.exp_max}"
                 f"\nVALEUR EXP  : {old_val_exp} --> {self.valeur_exp}"
             )
-
             n_niveau -= 1
 
-    def __str__(self):
-        return self.nom, self.pv, self.att, self.ko
+    def remplir_sac(self, objet, capaciter=0):
+        capaciter = len(self.sac)
+        if capaciter < self.capaciter_max:
+            self.sac.append(objet.nom)
+            capaciter += 1
+            print(f"{objet.nom} à été ajouter à l'inventaire\nplace utiliser {capaciter}/{self.capaciter_max}")
+        else:
+            print("Ton sac est plein")
 
+    def utiliser_objet(self, objet, cible):
+        if objet in self.sac:
+            print("ok")
+            objet.utiliser(cible)
+            self.sac.pop(objet)
+
+    def voir_contenue_sac(self):
+        print("#### Objet dans le sac ####")
+        for i in self.sac:
+            print(i)
+        print("###########################")
+
+    def __repr__(self):
+        return f"{self.nom}, {self.pv}, {self.att}, {self.vit}, {self.ko}"

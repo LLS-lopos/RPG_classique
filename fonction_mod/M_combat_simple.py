@@ -1,19 +1,27 @@
 from random import randint
 
+from fonction_mod.affichage_texte import affichage_texte
+from fonction_mod.list_menu import menu_combat
+
+
 def combat_simple(hero, ennemi):
-    perso = (hero, ennemi)
     while True:
-        for i in perso:
+        for i in [hero, ennemi]:
             if i.ko is True:
                 return
         print(f"{ennemi.nom} - PV: {"💚" * ennemi.pv}, ⚔️: {ennemi.att}")
-        choix = input("1_att, 2_defence\n->")
+        affichage_texte(menu_combat)
+        choix = input("->")
         if choix == "1":
             hero.attaque(ennemi)
         elif choix == "2":
             print(f"{hero.nom} ne fait rien")
+        elif choix == "3":
+            try: hero.utiliser_objet(herbe1, hero)
+            except: print("aucun objet")
         else:
             print("1 ou 2 comme choix possible")
+            continue
 
         if not ennemi.ko:
             choix_ennemi = randint(0, 5)

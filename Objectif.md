@@ -16,6 +16,7 @@
     - [ ] ajout d'une minimap
     - [ ] combat aléatoire (simple random)
     - [ ] équilibrage du tour de jeu (qui joue avant l'autre)
+    - [ ] équilibrage des classes
 
 + Faire plus :
     - [ ] system de combat aléatoire (corp a corp, soin, magie)

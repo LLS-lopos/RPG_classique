@@ -1,13 +1,14 @@
 from random import randint
 
-from classes.perso import personnage
+from classes.perso import Personnage
 
-class Splip(personnage):
-    def __init__(self, nom: str="splip", pv: int=6, att: int=2, ko: bool=False, val_exp: int=10):
-        personnage.__init__(self, nom, pv, att, ko)
+class Splip(Personnage):
+    def __init__(self, nom: str="splip", pv: int=6, att: int=2, vit: int=3, ko: bool=False, val_exp: int=10):
+        Personnage.__init__(self, nom, pv, att, ko)
         self.nom = nom
         self.pv = pv
         self.att = att
+        self.vit =vit
         self.ko = ko
         self.valeur_exp = val_exp
 

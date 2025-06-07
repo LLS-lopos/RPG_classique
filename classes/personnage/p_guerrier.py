@@ -1,9 +1,9 @@
-from classes.perso import personnage
+from classes.perso import Personnage
 
 
-class Guerrier(personnage):
+class Guerrier(Personnage):
     def __init__(self, nom: str="guerrier", pv: int=20, att: int=8, ko: bool=False, val_exp: int=6):
-        personnage.__init__(self, nom, pv, att, ko)
+        Personnage.__init__(self, nom, pv, att, ko)
         self.nom = nom
         self.pv = pv
         self.att = att

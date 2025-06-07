@@ -5,16 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c921a9c7-d1f1-434a-84bf-5c657d5e46c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/RPG_classique.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Objectif.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/monstre/p_splip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonction_mod/F_liste_comparaison.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonction_mod/F_mathematique.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonction_mod/affichage_texte.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonction_mod/list_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objectif.md" beforeDir="false" afterPath="$PROJECT_DIR$/Objectif.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/monstre/p_splip.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/monstre/p_splip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/perso.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/perso.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/personnage/p_archer.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/personnage/p_archer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/personnage/p_guerrier.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/personnage/p_guerrier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/personnage/p_soldat.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/personnage/p_soldat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/personnage/p_villageois.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/personnage/p_villageois.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonction_mod/FM_groupe_ennemi.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/FM_groupe_ennemi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonction_mod/M_combat_equipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/M_combat_equipe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonction_mod/M_combat_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/M_combat_simple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonction_mod/M_combat_un_contre_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/M_combat_un_contre_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +54,113 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.FM_groupe_ennemi.executor&quot;: &quot;Run&quot;,
+    &quot;Python.F_liste_comparaison.executor&quot;: &quot;Run&quot;,
+    &quot;Python.F_mathematique.executor&quot;: &quot;Run&quot;,
+    &quot;Python.M_combat_equipe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RPG_horizon.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aventure.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cls_equipe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fonc_etat_jeu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fonc_math.executor&quot;: &quot;Run&quot;,
     &quot;Python.fonction_ops.executor&quot;: &quot;Run&quot;,
+    &quot;Python.m_fonction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="FM_groupe_ennemi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RPG_classique" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fonction_mod" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonction_mod/FM_groupe_ennemi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="F_liste_comparaison" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RPG_classique" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fonction_mod" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonction_mod/F_liste_comparaison.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="F_mathematique" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RPG_classique" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fonction_mod" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonction_mod/F_mathematique.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="m_fonction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RPG_classique" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Old_projet/rpg" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Old_projet/rpg/m_fonction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RPG_classique" />
       <option name="ENV_FILES" value="" />
@@ -78,6 +186,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.F_liste_comparaison" />
+        <item itemvalue="Python.F_mathematique" />
+        <item itemvalue="Python.FM_groupe_ennemi" />
+        <item itemvalue="Python.m_fonction" />
       </list>
     </recent_temporary>
   </component>
@@ -98,5 +210,16 @@
       <updated>1745611713142</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Old_projet/RPG_pygame/test/charger une scene 3D.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
