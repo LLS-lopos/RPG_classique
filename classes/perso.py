@@ -1,24 +1,27 @@
-import random
+import json
+import pathlib
 from random import randint, uniform
-from classes.objet.classique.herbe import HerbeMedicinal1
-from fonction_mod.F_mathematique import arrondir_entier_superieur
+from fonction_mod.utile.F_mathematique import arrondir_entier_superieur
 
 
 class Personnage:
-    def __init__(self, nom: str, pv: int, att: int, vit: int, ko: bool=False, val_exp: int=3):
+    def __init__(self, nom: str, pv: int, pm: int, att: int, vit: int, ko: bool=False, val_exp: int=3):
         super().__init__()
         self.nom = nom
         self.pv = pv
-        self.pv_max = pv
+        self.pm = pm
         self.att = att
         self.vit = vit
         self.ko = ko
         self.valeur_exp = val_exp
 
+        self.pv_max = pv
+        self.pm_max = pm
+
         self.exp = 0
         self.exp_max = 100
         self.niv = 0
-        self.niv_max = 20
+        self.niv_max = 30
 
         self.sac = []
         self.capaciter_max = 10
@@ -77,22 +80,31 @@ class Personnage:
         if n_niveau is None:
             n_niveau = 1
         while n_niveau:
+            if self.niv >= self.niv_max:
+                print(f"{self.nom} est déjà au niveau maximum" )
+                return
             old_niv = self.niv
             old_att = self.att
             old_vit = self.vit
             old_exp_max = self.exp_max
             old_val_exp = self.valeur_exp
+            old_pv_max = self.pv_max
+            old_pm_max = self.pm_max
             self.niv += 1
             self.exp = 0
-            self.exp_max *= random.uniform(1.1, 1.3)
+            self.exp_max *= uniform(1.1, 1.3)
             arrondir_entier_superieur(self.exp_max)
             self.exp_max = int(self.exp_max)
             self.valeur_exp += randint(2, 6)
             self.att += randint(0, 4)
             self.vit += randint(0, 3)
+            self.pv_max += randint(0, 5)
+            self.pm_max += randint(0, 2)
             print(
                 f"{self.nom} gagne un niveau"
                 f"\nNIVEAU      : {old_niv} --> {self.niv}"
+                f"\nPV MAX      : {old_pv_max} --> {self.pv_max}"
+                f"\nPM MAX      : {old_pm_max} --> {self.pm_max}"
                 f"\nATTAQUE     : {old_att} --> {self.att}"
                 f"\nVITESSE     : {old_vit} --> {self.vit}"
                 f"\nEXP MAX     : {old_exp_max} --> {self.exp_max}"
@@ -121,10 +133,64 @@ class Personnage:
             print(i)
         print("###########################")
 
+    def sauvegarde(self):
+        save_player = pathlib.Path.home() / ".RPG_CLASSIQUE" / ("player_" + str(self.nom) + ".json")
+        if not save_player.exists():
+            save_player.touch()
+        doc_loc = {
+            "niv": self.niv,
+            "nom": self.nom,
+            "pv": self.pv,
+            "pm": self.pm,
+            "att": self.att,
+            "vit": self.vit,
+            "ko": self.ko,
+            "exp": self.exp,
+            "pv max": self.pv_max,
+            "pm max": self.pm_max,
+            "exp max": self.exp_max,
+            "niv max": self.niv_max,
+            "valeur exp max": self.valeur_exp,
+            "sac": self.sac,
+            "capaciter sac": self.capaciter_max,
+            "equipement": self.equipement,
+        }
+        with open(save_player, 'w', encoding="utf-8") as f:
+            json.dump(doc_loc, f, indent=4)
+
+    def charger(self):
+        chager_player = pathlib.Path.home() / ".RPG_CLASSIQUE" / ("player_"+str(self.nom)+".json")
+        if chager_player.exists():
+            with open(chager_player, 'r', encoding="utf-8") as f:
+                dico = json.load(f)
+                for cle in dico:
+                    if cle == "niv": self.niv = dico[cle]
+                    if cle == "nom": self.nom = dico[cle]
+                    if cle == "pv": self.pv = dico[cle]
+                    if cle == "pm": self.pm = dico[cle]
+                    if cle == "att": self.att = dico[cle]
+                    if cle == "vit": self.vit = dico[cle]
+                    if cle == "ko": self.ko = dico[cle]
+                    if cle == "exp": self.exp = dico[cle]
+                    if cle == "pv max": self.pv_max = dico[cle]
+                    if cle == "pm max": self.pm_max = dico[cle]
+                    if cle == "exp max": self.exp_max = dico[cle]
+                    if cle == "niv max": self.niv_max = dico[cle]
+                    if cle == "valeur exp max": self.valeur_exp = dico[cle]
+                    if cle == "sac": self.sac = dico[cle]
+                    if cle == "capaciter sac": self.capaciter_max = dico[cle]
+                    if cle == "equipement": self.equipement = dico[cle]
+
     def __repr__(self):
-        return f"{self.nom}, {self.pv}, {self.att}, {self.vit}, {self.ko}"
+        return (f"Niv : {self.niv}\n"
+                f"Nom : {self.nom}\n"
+                f"PV  : {self.pv}\n"
+                f"ATT : {self.att}\n"
+                f"VIT : {self.vit}\n"
+                f"KO  : {self.ko}\n")
 
 if __name__ == "__main__":
-    ludo = Personnage("Ludo", 50, 3, 4)
-    for i in range(6):
-        ludo.niveau_sup()
+    ludo = Personnage("Ludo", 26, 0, 3, 4)
+    print(ludo.__repr__())
+    ludo.charger()
+    print(ludo.__repr__())
