@@ -1,12 +1,12 @@
 from classes.monstre.p_splip import Splip
 from classes.objet.classique.herbe import HerbeMedicinal1
 from classes.perso import Personnage
-from fonction_mod.FM_groupe_ennemi import groups_ennemi
-from fonction_mod.M_combat_equipe import combat
-from fonction_mod.M_combat_simple import combat_simple
-from fonction_mod.M_combat_un_contre_group import combat_un_contre_group
-from fonction_mod.affichage_texte import affichage_texte
-from fonction_mod.list_menu import accueil, mode
+from fonction_mod.combat.FM_groupe_ennemi import groups_ennemi
+from fonction_mod.combat.M_combat_equipe import combat
+from fonction_mod.combat.M_combat_simple import combat_simple
+from fonction_mod.combat.M_combat_un_contre_group import combat_un_contre_group
+from fonction_mod.interface.affichage_texte import affichage_texte
+from fonction_mod.interface.list_menu import accueil, mode
 
 herbe1 = HerbeMedicinal1()
 
@@ -29,7 +29,7 @@ def boucle_de_jeu():
 
 def mode_jeu():
     while True:
-        hero = Personnage("XANA", 60, 3, 4)
+        hero = Personnage("XANA", 60, 0, 3, 4)
         ins_splip = Splip(att=6)
         affichage_texte(mode, " Mode de Jeu ")
         mode_de_jeu = input("-> ")
@@ -44,7 +44,7 @@ def mode_jeu():
 
 def test():
     print(f"Instance {herbe1}")
-    hero = Personnage("XANA", 60, 3, 4)
+    hero = Personnage("XANA", 60, 0, 3, 4)
     ins_splip = Splip(att=6)
     hero.__repr__()
     hero.remplir_sac(herbe1)

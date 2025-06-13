@@ -1,8 +1,6 @@
-from random import randint
-
-from fonction_mod.affichage_texte import affichage_texte
-from fonction_mod.list_menu import menu_combat
-from fonction_mod.F_liste_comparaison import equipe_grand_vers_petit, equipe_petit_vers_grand
+from fonction_mod.interface.affichage_texte import affichage_texte
+from fonction_mod.interface.list_menu import menu_combat
+from fonction_mod.utile.F_liste_comparaison import equipe_grand_vers_petit
 
 
 def combat(g_hero: list, g_ennemy: list):

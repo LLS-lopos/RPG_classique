@@ -1,7 +1,7 @@
 from random import randint
 
-from fonction_mod.affichage_texte import affichage_texte
-from fonction_mod.list_menu import menu_combat
+from fonction_mod.interface.affichage_texte import affichage_texte
+from fonction_mod.interface.list_menu import menu_combat
 
 
 def combat_simple(hero, ennemi):

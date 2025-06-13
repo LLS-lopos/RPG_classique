@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c921a9c7-d1f1-434a-84bf-5c657d5e46c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/perso.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/perso.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonction_mod/F_liste_comparaison.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/F_liste_comparaison.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonction_mod/M_combat_equipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/M_combat_equipe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonction_mod/M_combat_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/M_combat_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonction_mod/M_combat_un_contre_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/M_combat_un_contre_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonction_mod/affichage_texte.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/affichage_texte.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="c921a9c7-d1f1-434a-84bf-5c657d5e46c9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +37,7 @@
     "Python.FM_groupe_ennemi.executor": "Run",
     "Python.F_liste_comparaison.executor": "Run",
     "Python.F_mathematique.executor": "Run",
+    "Python.F_sauvegarder.executor": "Run",
     "Python.M_combat_equipe.executor": "Run",
     "Python.RPG_horizon.executor": "Run",
     "Python.aventure.executor": "Run",
@@ -62,7 +54,14 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.perso">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fonction_mod/combat" />
+      <recent name="$PROJECT_DIR$/fonction_mod/utile" />
+      <recent name="$PROJECT_DIR$/fonction_mod/interface" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="FM_groupe_ennemi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RPG_classique" />
       <option name="ENV_FILES" value="" />
@@ -76,7 +75,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonction_mod/FM_groupe_ennemi.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonction_mod/combat/FM_groupe_ennemi.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -98,7 +97,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonction_mod/F_liste_comparaison.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonction_mod/utile/F_liste_comparaison.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,7 +119,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonction_mod/F_mathematique.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonction_mod/utile/F_mathematique.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />

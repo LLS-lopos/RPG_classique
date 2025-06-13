@@ -1,5 +1,3 @@
-from fonction_mod.list_menu import perso_vivant
-
 def grand_vers_petit(liste: list):
     sortie = []
     liste_cp = liste.copy()
