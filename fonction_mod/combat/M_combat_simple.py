@@ -19,6 +19,12 @@ def combat_simple(hero, ennemi):
         elif choix == "3":
             try: hero.utiliser_objet(herbe1, hero)
             except: print("aucun objet")
+        elif choix == "4":
+            i = randint(1, 5)
+            if i == 1:
+                break
+            else:
+                print("L'ennemie vous bloque le passage")
         else:
             print("1 ou 2 comme choix possible")
             continue
