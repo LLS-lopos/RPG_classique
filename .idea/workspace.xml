@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c921a9c7-d1f1-434a-84bf-5c657d5e46c9" name="Changes" comment="" />
+    <list default="true" id="c921a9c7-d1f1-434a-84bf-5c657d5e46c9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonction_mod/combat/M_combat_un_contre_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/combat/M_combat_un_contre_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonction_mod/interface/list_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/interface/list_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,28 +37,28 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.FM_groupe_ennemi.executor": "Run",
-    "Python.F_liste_comparaison.executor": "Run",
-    "Python.F_mathematique.executor": "Run",
-    "Python.F_sauvegarder.executor": "Run",
-    "Python.M_combat_equipe.executor": "Run",
-    "Python.RPG_horizon.executor": "Run",
-    "Python.aventure.executor": "Run",
-    "Python.cls_equipe.executor": "Run",
-    "Python.fonc_etat_jeu.executor": "Run",
-    "Python.fonc_math.executor": "Run",
-    "Python.fonction_ops.executor": "Run",
-    "Python.m_fonction.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.perso.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.FM_groupe_ennemi.executor&quot;: &quot;Run&quot;,
+    &quot;Python.F_liste_comparaison.executor&quot;: &quot;Run&quot;,
+    &quot;Python.F_mathematique.executor&quot;: &quot;Run&quot;,
+    &quot;Python.F_sauvegarder.executor&quot;: &quot;Run&quot;,
+    &quot;Python.M_combat_equipe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RPG_horizon.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aventure.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cls_equipe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fonc_etat_jeu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fonc_math.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fonction_ops.executor&quot;: &quot;Run&quot;,
+    &quot;Python.m_fonction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.perso.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fonction_mod/combat" />
@@ -61,7 +66,7 @@
       <recent name="$PROJECT_DIR$/fonction_mod/interface" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="FM_groupe_ennemi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RPG_classique" />
       <option name="ENV_FILES" value="" />
@@ -174,9 +179,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.perso" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.F_liste_comparaison" />
+        <item itemvalue="Python.perso" />
         <item itemvalue="Python.F_mathematique" />
         <item itemvalue="Python.FM_groupe_ennemi" />
       </list>
