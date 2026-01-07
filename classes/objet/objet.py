@@ -6,3 +6,11 @@ class Objet:
         self.prix = prix
         self.valeur = valeur
         self.description = description
+
+    def utiliser(self, cible):
+        old = cible.pv
+        cible.pv += self.valeur
+        if cible.pv > cible.pv_max:
+            cible.pv = cible.pv_max
+        dif_pv = old - cible.pv
+        print(f"{cible.nom} utilise {self.nom} et récupère {dif_pv} PV")

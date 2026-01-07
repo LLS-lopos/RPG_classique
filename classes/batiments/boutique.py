@@ -1,4 +1,4 @@
-from classes.Infrastruture.comptenue_jeu import Dictionnaire
+from classes.batiments.comptenue_jeu import Dictionnaire
 
 
 class Boutique(Dictionnaire):

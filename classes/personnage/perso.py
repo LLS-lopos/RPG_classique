@@ -1,6 +1,10 @@
 import json
 import pathlib
 from random import randint, uniform
+
+from classes.inventaire.sac import Sac
+from classes.objet.classique.bonbon import Bonbon
+from classes.objet.classique.herbe import HerbeMedicinal1
 from fonction_mod.utile.F_mathematique import arrondir_entier_superieur
 
 
@@ -23,8 +27,7 @@ class Personnage:
         self.niv = 0
         self.niv_max = 30
 
-        self.sac = []
-        self.capaciter_max = 10
+        self.sac: dict = Sac(10, 15)
 
         self.equipement = {
             "arme principal": None,  # arme lourde
@@ -112,26 +115,22 @@ class Personnage:
             )
             n_niveau -= 1
 
-    def remplir_sac(self, objet, capaciter=0):
-        capaciter = len(self.sac)
-        if capaciter < self.capaciter_max:
-            self.sac.append(objet.nom)
-            capaciter += 1
-            print(f"{objet.nom} à été ajouter à l'inventaire\nplace utiliser {capaciter}/{self.capaciter_max}")
-        else:
-            print("Ton sac est plein")
+    def remplir_sac(self, objet, nombre):
+        self.sac.ajouter_element(objet, nombre)
 
     def utiliser_objet(self, objet, cible):
-        if objet in self.sac:
-            print("ok")
-            objet.utiliser(cible)
-            self.sac.pop(objet)
+        print(objet, cible)
+        print(f"Type: {type(self.sac)}")
+        for i, e in enumerate(self.sac.dictionnaire):
+            print(i, e)
+            if self.sac.dictionnaire[e][1] != 0:
+                obj = self.sac.dictionnaire[e][0]
+                obj.utiliser(cible)
+
+        self.sac.retirer_element(objet)
 
     def voir_contenue_sac(self):
-        print("#### Objet dans le sac ####")
-        for i in self.sac:
-            print(i)
-        print("###########################")
+        self.sac.afficher_dictionnaire()
 
     def sauvegarde(self):
         save_player = pathlib.Path.home() / ".RPG_CLASSIQUE" / ("player_" + str(self.nom) + ".json")
@@ -151,8 +150,6 @@ class Personnage:
             "exp max": self.exp_max,
             "niv max": self.niv_max,
             "valeur exp max": self.valeur_exp,
-            "sac": self.sac,
-            "capaciter sac": self.capaciter_max,
             "equipement": self.equipement,
         }
         with open(save_player, 'w', encoding="utf-8") as f:
@@ -177,8 +174,6 @@ class Personnage:
                     if cle == "exp max": self.exp_max = dico[cle]
                     if cle == "niv max": self.niv_max = dico[cle]
                     if cle == "valeur exp max": self.valeur_exp = dico[cle]
-                    if cle == "sac": self.sac = dico[cle]
-                    if cle == "capaciter sac": self.capaciter_max = dico[cle]
                     if cle == "equipement": self.equipement = dico[cle]
 
     def __repr__(self):
@@ -187,10 +182,30 @@ class Personnage:
                 f"PV  : {self.pv}\n"
                 f"ATT : {self.att}\n"
                 f"VIT : {self.vit}\n"
-                f"KO  : {self.ko}\n")
+                f"KO  : {self.ko}\n"
+                f"Sac: {self.sac}\n")
 
 if __name__ == "__main__":
     ludo = Personnage("Ludo", 26, 0, 3, 4)
     print(ludo.__repr__())
+    he = HerbeMedicinal1()
+    bo = Bonbon()
     ludo.charger()
+    ludo.remplir_sac(he, 1)
     print(ludo.__repr__())
+    ludo.remplir_sac(he, 1)
+    ludo.remplir_sac(he, 1)
+    ludo.remplir_sac(he, 1)
+    ludo.remplir_sac(he, 5)
+    print(ludo.__repr__())
+    ludo.voir_contenue_sac()
+    ludo.remplir_sac(bo, 2)
+    ludo.utiliser_objet('herbe médicinal', ludo)
+    ludo.utiliser_objet('herbe médicinal', ludo)
+    ludo.utiliser_objet('herbe médicinal', ludo)
+    ludo.utiliser_objet('herbe médicinal', ludo)
+    ludo.utiliser_objet('herbe médicinal', ludo)
+    ludo.utiliser_objet('herbe médicinal', ludo)
+    ludo.utiliser_objet('herbe médicinal', ludo)
+    ludo.utiliser_objet('herbe médicinal', ludo)
+    ludo.utiliser_objet('herbe médicinal', ludo)

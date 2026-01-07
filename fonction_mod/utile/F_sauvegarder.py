@@ -1,7 +1,6 @@
 import pathlib
-import json
 
-from classes.perso import Personnage
+from classes.personnage.perso import Personnage
 
 hero = Personnage("XANA", 20, 0, 3, 4)
 

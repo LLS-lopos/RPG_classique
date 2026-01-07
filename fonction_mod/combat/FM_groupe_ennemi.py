@@ -1,7 +1,7 @@
 from random import randint
 
-from classes.monstre.p_splip import Splip
-from classes.perso import Personnage
+from classes.personnage.monstre.p_splip import Splip
+from classes.personnage.perso import Personnage
 
 def groups_ennemi(max: int):
     n = randint(1, max)

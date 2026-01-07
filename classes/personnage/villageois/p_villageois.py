@@ -1,4 +1,4 @@
-from classes.perso import Personnage
+from classes.personnage.perso import Personnage
 
 
 class Villageois(Personnage):

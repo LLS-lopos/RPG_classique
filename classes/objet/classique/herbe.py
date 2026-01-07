@@ -9,8 +9,3 @@ class HerbeMedicinal1(Objet):
         self.prix = prix
         self.valeur = valeur
 
-    def utiliser(self, cible):
-        #old = cible.pv
-        cible.pv += self.valeur
-        #dif_pv = cible.pv - old
-        print(f"{cible.nom} utilise {self.nom} et récupère {"dif_pv"} PV")

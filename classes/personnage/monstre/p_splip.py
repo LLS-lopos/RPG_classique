@@ -1,5 +1,4 @@
-from random import randint
-from classes.perso import Personnage
+from classes.personnage.perso import Personnage
 
 
 class Splip(Personnage):

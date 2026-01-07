@@ -1,12 +1,12 @@
-from classes.monstre.p_splip import Splip
+from classes.personnage.monstre.p_splip import Splip
 from classes.objet.classique.herbe import HerbeMedicinal1
-from classes.perso import Personnage
+from classes.personnage.perso import Personnage
 from fonction_mod.combat.FM_groupe_ennemi import groups_ennemi
 from fonction_mod.combat.M_combat_equipe import combat
 from fonction_mod.combat.M_combat_simple import combat_simple
 from fonction_mod.combat.M_combat_un_contre_group import combat_un_contre_group
-from fonction_mod.interface.affichage_texte import affichage_texte
-from fonction_mod.interface.list_menu import accueil, mode
+from interface.interface.affichage_texte import affichage_texte
+from interface.interface.list_menu import accueil, mode
 
 
 def boucle_de_jeu():
