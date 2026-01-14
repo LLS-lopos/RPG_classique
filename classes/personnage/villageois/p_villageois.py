@@ -2,8 +2,8 @@ from classes.personnage.perso import Personnage
 
 
 class Villageois(Personnage):
-    def __init__(self, nom: str="villageois", pv: int=10, att: int=2, ko: bool=False, val_exp: int=1):
-        Personnage.__init__(self, nom, pv, att, ko)
+    def __init__(self, nom: str="villageois", pv: int=10, att: int=2, vit=1, ko: bool=False, val_exp: int=1):
+        Personnage.__init__(self, nom, pv, att, vit, ko)
         self.nom = nom
         self.pv = pv
         self.att = att
