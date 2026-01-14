@@ -1,3 +1,4 @@
+from FermeFarming.jeuFF import farming_ferme
 from classes.personnage.monstre.p_splip import Splip
 from classes.objet.classique.herbe import HerbeMedicinal1
 from classes.personnage.perso import Personnage
@@ -7,12 +8,13 @@ from fonction_mod.combat.M_combat_simple import combat_simple
 from fonction_mod.combat.M_combat_un_contre_group import combat_un_contre_group
 from interface.interface.affichage_texte import affichage_texte
 from interface.interface.list_menu import accueil, mode
+from MiniJeuxCookies.jeu import game_cookie
 
 
 def boucle_de_jeu():
-    affichage_texte(" RPG ADVENTURE CLASSIQUE CLI")
+    affichage_texte("RPG GAME", "RPG ADVENTURE CLASSIQUE CLI", "v0.1")
     while True:
-        affichage_texte(accueil, " Accueil ")
+        affichage_texte(accueil, "Accueil")
         choix = input("-> ")
         if choix == "1":
             mode_jeu()
@@ -36,7 +38,11 @@ def mode_jeu():
             combat_un_contre_group(hero, group1)
         elif mode_de_jeu == "3":
             combat([hero], group1)
-        elif mode_de_jeu == "4": break
+        elif mode_de_jeu == "4":
+            game_cookie()
+        elif mode_de_jeu == "5":
+            farming_ferme()
+        elif mode_de_jeu == "6": break
         else: continue
 
 def test():
@@ -45,9 +51,9 @@ def test():
     hero = Personnage("XANA", 60, 0, 3, 4)
     ins_splip = Splip(att=6)
     hero.__repr__()
-    hero.remplir_sac(herbe1)
-    hero.remplir_sac(herbe1)
-    hero.remplir_sac(herbe1)
+    hero.remplir_sac(herbe1, 1)
+    hero.remplir_sac(herbe1, 1)
+    hero.remplir_sac(herbe1, 4)
     ins_splip.attaque(hero)
     ins_splip.attaque(hero)
     ins_splip.attaque(hero)

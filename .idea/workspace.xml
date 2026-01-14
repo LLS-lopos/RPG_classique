@@ -5,29 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c921a9c7-d1f1-434a-84bf-5c657d5e46c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FermeFarming/jeuFF.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/vegetation/agricole/pomme.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonction_mod/utile/F_compteur_tour.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Infrastruture/boutique.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/batiments/boutique.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Infrastruture/comptenue_jeu.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/batiments/comptenue_jeu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Infrastruture/inventaire.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/inventaire/inventaire.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Infrastruture/sac.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/inventaire/sac.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/equipement/arme/epee_bois.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/equipement/arme/epee/epee_bois.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/equipement/arme/epee_bronze.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/equipement/arme/epee/epee_bronze.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/equipement/arme/epee_fer.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/equipement/arme/epee/epee_fer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/monstre/p_splip.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/personnage/monstre/p_splip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/objet/classique/herbe.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/objet/classique/herbe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/objet/objet.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/objet/objet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/perso.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/personnage/perso.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/personnage/p_archer.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/personnage/heros/p_archer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/personnage/p_guerrier.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/personnage/heros/p_guerrier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/personnage/p_soldat.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/personnage/heros/p_soldat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/personnage/p_villageois.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/personnage/villageois/p_villageois.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonction_mod/combat/FM_groupe_ennemi.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/combat/FM_groupe_ennemi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonction_mod/combat/M_combat_equipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/combat/M_combat_equipe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonction_mod/combat/M_combat_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/combat/M_combat_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonction_mod/combat/M_combat_un_contre_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/combat/M_combat_un_contre_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonction_mod/interface/affichage_texte.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/interface/affichage_texte.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonction_mod/interface/list_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/interface/list_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonction_mod/utile/F_sauvegarder.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/utile/F_sauvegarder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/personnage/villageois/p_villageois.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/personnage/villageois/p_villageois.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/interface/affichage_texte.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/interface/affichage_texte.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/interface/list_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/interface/list_menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LLS-lopos&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LLS-lopos/RPG_classique.git&quot;,
+    &quot;accountId&quot;: &quot;1e73f7cb-c868-4c8b-b4c1-6e3c8def99d9&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -65,6 +62,7 @@
     "Python.F_sauvegarder.executor": "Run",
     "Python.M_combat_equipe.executor": "Run",
     "Python.RPG_horizon.executor": "Run",
+    "Python.affichage_texte.executor": "Run",
     "Python.aventure.executor": "Run",
     "Python.cls_equipe.executor": "Run",
     "Python.fonc_etat_jeu.executor": "Run",
@@ -82,36 +80,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/classes/vegetation/agricole" />
+      <recent name="$PROJECT_DIR$/classes/personnage/villageois" />
       <recent name="$PROJECT_DIR$/classes/inventaire" />
       <recent name="$PROJECT_DIR$/classes/personnage" />
       <recent name="$PROJECT_DIR$/interface" />
-      <recent name="$PROJECT_DIR$/classes/equipement/arme/epee" />
-      <recent name="$PROJECT_DIR$/classes/equipement/tenue" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.perso">
-    <configuration name="FM_groupe_ennemi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RPG_classique" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fonction_mod" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonction_mod/combat/FM_groupe_ennemi.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.main">
     <configuration name="F_liste_comparaison" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RPG_classique" />
       <option name="ENV_FILES" value="" />
@@ -148,6 +124,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonction_mod/utile/F_mathematique.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="affichage_texte" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RPG_classique" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/interface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/interface/affichage_texte.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -202,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.perso" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.affichage_texte" />
+        <item itemvalue="Python.perso" />
         <item itemvalue="Python.F_liste_comparaison" />
         <item itemvalue="Python.F_mathematique" />
-        <item itemvalue="Python.FM_groupe_ennemi" />
       </list>
     </recent_temporary>
   </component>
@@ -248,6 +246,13 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
