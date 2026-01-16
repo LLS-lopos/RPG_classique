@@ -6,12 +6,12 @@
     - [x] affrontement 1-hero vs 1-ennemi
     - [x] affrontement 1-hero vs groupe ennemie
     - [ ] affrontement groupe-hero vs groupe ennemie
-    - [ ] équilibrage du niveau
+    - [x] équilibrage du niveau
     - [ ] équilibrage de la difficulté
     - [ ] system d'objet
     - [ ] system d'équipement
-    - [ ] systme d'équipe
-    - [x] nombre d'ennemi alléatoire
+    - [ ] system d'équipe
+    - [x] nombre d'ennemis aléatoire
     - [ ] system de gestion d'équipe
     - [ ] ajout d'une minimap
     - [ ] combat aléatoire (simple random)
@@ -34,3 +34,29 @@
     - [ ] system multijoueur online (PvP)
     - [ ] system multijoueur online (collaboration)
     - [ ] combat aléatoire (via la map)
+
++ Class Personnage:
+    - [ ] guerrier
+    - [ ] mage
+    - [ ] prête
+    - [ ] troubadour
+    - [ ] archer
+    - [ ] voleur
+    - [ ] villageois
+
++ Class Objet:
+    + Inventaire :
+        - [ ] sac
+    + Consommable :
+        - [ ] herbe medicinal
+    + Equipement :
+        + arme :
+            - [ ] épée
+            - [ ] arc
+            - [ ] massue
+            - [ ] gant
+        + haut
+        + bas
+        + accessoire
+        + bouclier
+        + chaussure
