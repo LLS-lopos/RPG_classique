@@ -1,21 +1,31 @@
 class vegetation:
-    def __init__(self, nom, init_temps, vit_pousse, mure=False):
+    def __init__(self, nom, init_temps, vit_pousse, mure=False, cueillir=False):
         super().__init__()
         self._nom = nom
         self._init_temps = init_temps
         self._vit_pousse = vit_pousse
         self._mure = mure
+        self._cueillir = cueillir
 
     def check_mure(self):
-        if self._init_temps != self._vit_pousse:
+        if not self._mure:
             self._init_temps += 1
-        else:
-            self._mure = True
+            if self._init_temps == self._vit_pousse:
+                self._mure = True
 
-
+    def recolter(self):
+        if self._mure:
+            self._init_temps = 0
+            self._mure = False
 
     def __str__(self):
-        return f"classe -> {self._nom}"
+        etat = ''
+        if self._mure:
+            etat = " [mure]"
+        return f"{self._nom} ({self._init_temps}/{self._vit_pousse}){etat}"
 
     def __repr__(self):
-        return f"classe -> {self._nom}"
+        etat = ''
+        if self._mure:
+            etat = " [mure]"
+        return f"{self._nom} ({self._init_temps}/{self._vit_pousse}){etat}"
