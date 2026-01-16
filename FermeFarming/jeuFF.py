@@ -44,7 +44,7 @@ def farming_ferme():
                     etat += culture_plante
             etat += culture_arbre
 
-        affichage_texte(Actions, f"Jour {jour}", f"Objectif 100 Pièce ({piece})")
+        affichage_texte(Actions, f"Jour ({jour})", f"Objectif 100 Pièce ({piece})")
         affichage_texte(etat, "Mini Farming Simulator", "état de la partie")
 
         choix = input("Quoi faire ?\n>>> ")
