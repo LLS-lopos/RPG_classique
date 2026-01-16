@@ -199,7 +199,7 @@ if __name__ == "__main__":
     listo = ["pol", "li", "ice"]
     texte = "pazkkf efzef"
     tutuple = (20.01, 2, 3.3)
-    affichage_texte(tutuple, "Test Tuple", "final")
+    affichage_texte(tutuple, "Test Tuple", "final pour un test de grandeur")
     affichage_texte(texte, "Test Texte", "OM")
     affichage_texte(listo, "Test Liste", "PSG")
     affichage_texte(dico, "Test Dictionnaire", "V0.1")

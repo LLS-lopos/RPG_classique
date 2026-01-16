@@ -8,7 +8,7 @@ from fonction_mod.combat.M_combat_simple import combat_simple
 from fonction_mod.combat.M_combat_un_contre_group import combat_un_contre_group
 from interface.interface.affichage_texte import affichage_texte
 from interface.interface.list_menu import accueil, mode
-from MiniJeuxCookies.jeu import game_cookie
+from MiniJeuxCookies.jeuMJC import game_cookie
 
 
 def boucle_de_jeu():
