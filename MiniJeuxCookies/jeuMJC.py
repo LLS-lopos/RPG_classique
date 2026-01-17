@@ -12,14 +12,14 @@ def game_cookie():
     group_mamie = []
     total_mamie = []
     while True:
-        print("\n\n")
         tour = compteur_tour(tour)
         affichage_texte([f"1 - préparer cookie   (cookie: {cookie})", f"2 - acheter une mamie ({recrue}-cookie)"],
-                        "Objectif 100 cookie")
-        entrer = input("Que faire ?")
-        if group_mamie != []:
+                        f"Tour ({tour})", "Objectif 100 cookie")
+        entrer = input("Que faire ?\n>>> ")
+        if group_mamie:
             for i in group_mamie:
-                cookie += i.cookie_produit()
+                prod = i.cookie_produit()
+                cookie += prod
             for i in group_mamie:
                 retrait = i.retraite()
                 if retrait:
@@ -42,9 +42,8 @@ def game_cookie():
                 affichage_texte(group_mamie, "équipe de mamie")
                 recrue += 3
                 print(f"Votre groupe mamie est de {mamie} !")
-
         else:
-            continue
+            pass
         print(f"Vous avez {cookie} cookies")
         if cookie >= 100:
             print("Jeu Fini")

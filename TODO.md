@@ -10,3 +10,7 @@
 2) un system de requête 
 3) un system de donjon
 4) un parcours d'énigme
+
+## RPG Assembly
+
+1) simple combat 1vs1

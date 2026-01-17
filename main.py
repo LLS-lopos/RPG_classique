@@ -1,4 +1,5 @@
 from FermeFarming.jeuFF import farming_ferme
+from RPG_Assembly.assembly import jeu_assembly
 from classes.personnage.monstre.p_splip import Splip
 from classes.objet.classique.herbe import HerbeMedicinal1
 from classes.personnage.perso import Personnage
@@ -42,7 +43,9 @@ def mode_jeu():
             game_cookie()
         elif mode_de_jeu == "5":
             farming_ferme()
-        elif mode_de_jeu == "6": break
+        elif mode_de_jeu == "6":
+            jeu_assembly()
+        elif mode_de_jeu == "7": break
         else: continue
 
 def test():

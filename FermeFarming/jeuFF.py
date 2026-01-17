@@ -18,20 +18,21 @@ def farming_ferme():
     vendu = []
     culture_arbre = []
     culture_plante = []
+    objectif = 250
     element = 0
     jour = 0
     piece = 0
     affichage_texte("Bienvenue dans le jeu", "Ferme Farming")
     while True:
         jour = compteur_tour(jour)
-        etat = [f"Pièce: {piece}/100"]
-
-        if culture_plante != []:
+        etat = [f"Pièce: {piece}/{objectif}"]
+        if culture_plante:
             etat += ["Culture:"]
             for i in culture_plante:
                 i.check_mure()
             etat += culture_plante
-        if culture_arbre != []:
+
+        if culture_arbre:
             etat.append("Arbre:")
             for i in culture_arbre:
                 i.check_mure()
@@ -39,12 +40,12 @@ def farming_ferme():
                     fruit = i.apparition_pomme()
                     for pomme in range(fruit):
                         element += 1
-                        pomme = Pomme(("Pomme " + str(element)))
+                        pomme = Pomme()
                         culture_plante.append(pomme)
                     etat += culture_plante
             etat += culture_arbre
 
-        affichage_texte(Actions, f"Jour ({jour})", f"Objectif 100 Pièce ({piece})")
+        affichage_texte(Actions, f"Jour ({jour})", f"Objectif {objectif} Pièce ({piece})")
         affichage_texte(etat, "Mini Farming Simulator", "état de la partie")
 
         choix = input("Quoi faire ?\n>>> ")
@@ -72,16 +73,42 @@ def farming_ferme():
                     vendu.append(i)
         elif choix == "5":
             print(Actions[4][2:])
-            continue
+            pass
         elif choix == "6":
             print(Actions[5][2:])
             break
 
-        if piece >= 250:
+        if piece >= objectif:
             log_ven = len(vendu)
             log_autre = len(culture_plante)
-            vendu += culture_plante
+            n_pomme = 0
+            n_truffe = 0
+            n_mais = 0
+            nv_pomme = 0
+            nv_truffe = 0
+            nv_mais = 0
+            for i in vendu:
+                if i._nom == "Pomme":
+                    n_pomme += 1
+                elif i._nom == "Truffe":
+                    n_truffe += 1
+                elif i._nom == "Maïs":
+                    n_mais += 1
+            vendu = []
+            vendu += [f"Pomme {n_pomme} Vendu"]
+            vendu += [f"Truffe {n_truffe} Vendu"]
+            vendu += [f"Maïs {n_mais} Vendu"]
+            for i in culture_plante:
+                if i._nom == "Pomme":
+                    nv_pomme += 1
+                elif i._nom == "Truffe":
+                    nv_truffe += 1
+                elif i._nom == "Maïs":
+                    nv_mais += 1
+            vendu += [f"Pomme {nv_pomme} Non-Vendu"]
+            vendu += [f"Truffe {nv_truffe} Non-Vendu"]
+            vendu += [f"Maïs {nv_mais} Non-Vendu"]
             vendu += culture_arbre
-            affichage_texte(vendu, "Fin De La Partie", f"Stats: pièce->{piece}, non vendu->{log_autre}, plantes vendu->{log_ven}, nombre de jour->{jour}")
+            affichage_texte(vendu, "Fin De La Partie",
+                            f"Stats: pièce->{piece}, non vendu->{log_autre}, plantes vendu->{log_ven}, nombre de jour->{jour}")
             break
-
