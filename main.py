@@ -1,5 +1,5 @@
 from FermeFarming.jeuFF import farming_ferme
-from RPG_Assembly.assembly import jeu_assembly
+from RPG_Assembly.assembly import jeu_assembly, jeu_tk_assembly
 from classes.personnage.monstre.p_splip import Splip
 from classes.objet.classique.herbe import HerbeMedicinal1
 from classes.personnage.perso import Personnage
@@ -44,7 +44,11 @@ def mode_jeu():
         elif mode_de_jeu == "5":
             farming_ferme()
         elif mode_de_jeu == "6":
-            jeu_assembly()
+            choix = input("CLI/GRAPHIC ?\n>>> ")
+            if choix == "CLI":
+                jeu_assembly()
+            elif choix == "GRAPHIC":
+                jeu_tk_assembly()
         elif mode_de_jeu == "7": break
         else: continue
 

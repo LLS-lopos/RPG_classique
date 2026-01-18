@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c921a9c7-d1f1-434a-84bf-5c657d5e46c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FermeFarming/jeuFF.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/vegetation/agricole/pomme.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonction_mod/utile/F_compteur_tour.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPG_Assembly/classe/armes/arme.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPG_Assembly/classe/armes/epee/epee_bois.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPG_Assembly/classe/personnages/ennemie/e_class/Slime.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPG_Assembly/classe/personnages/ennemie/ia_ennemie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPG_Assembly/classe/personnages/hero/hero.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPG_Assembly/classe/personnages/hero/p_class/Player.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPG_Assembly/classe/personnages/perso.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPG_Assembly/tk_assembly.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/personnage/villageois/p_villageois.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/personnage/villageois/p_villageois.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/interface/affichage_texte.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/interface/affichage_texte.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/interface/list_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/interface/list_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG_Assembly/assembly.py" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_Assembly/assembly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG_Assembly/classe/Player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG_Assembly/classe/Slime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG_Assembly/classe/perso.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonction_mod/combat/M_combat_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/combat/M_combat_simple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonction_mod/combat/M_combat_un_contre_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonction_mod/combat/M_combat_un_contre_group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,37 +61,37 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.FM_groupe_ennemi.executor": "Run",
-    "Python.F_liste_comparaison.executor": "Run",
-    "Python.F_mathematique.executor": "Run",
-    "Python.F_sauvegarder.executor": "Run",
-    "Python.M_combat_equipe.executor": "Run",
-    "Python.RPG_horizon.executor": "Run",
-    "Python.affichage_texte.executor": "Run",
-    "Python.aventure.executor": "Run",
-    "Python.cls_equipe.executor": "Run",
-    "Python.fonc_etat_jeu.executor": "Run",
-    "Python.fonc_math.executor": "Run",
-    "Python.fonction_ops.executor": "Run",
-    "Python.m_fonction.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.perso.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Shell Script.RPG.sh.executor": "Run",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.FM_groupe_ennemi.executor&quot;: &quot;Run&quot;,
+    &quot;Python.F_liste_comparaison.executor&quot;: &quot;Run&quot;,
+    &quot;Python.F_mathematique.executor&quot;: &quot;Run&quot;,
+    &quot;Python.F_sauvegarder.executor&quot;: &quot;Run&quot;,
+    &quot;Python.M_combat_equipe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RPG_horizon.executor&quot;: &quot;Run&quot;,
+    &quot;Python.affichage_texte.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aventure.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cls_equipe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fonc_etat_jeu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fonc_math.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fonction_ops.executor&quot;: &quot;Run&quot;,
+    &quot;Python.m_fonction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.perso.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Shell Script.RPG.sh.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/classes/vegetation/agricole" />
-      <recent name="$PROJECT_DIR$/classes/personnage/villageois" />
-      <recent name="$PROJECT_DIR$/classes/inventaire" />
-      <recent name="$PROJECT_DIR$/classes/personnage" />
-      <recent name="$PROJECT_DIR$/interface" />
+      <recent name="$PROJECT_DIR$/RPG_Assembly/classe/armes/epee" />
+      <recent name="$PROJECT_DIR$/RPG_Assembly/classe/personnages" />
+      <recent name="$PROJECT_DIR$/RPG_Assembly/classe/ennemie/e_class" />
+      <recent name="$PROJECT_DIR$/RPG_Assembly/classe/hero/p_class" />
+      <recent name="$PROJECT_DIR$/RPG_Assembly/classe/ennemie" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">

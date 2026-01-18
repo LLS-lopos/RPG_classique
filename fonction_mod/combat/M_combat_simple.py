@@ -13,7 +13,7 @@ def combat_simple(hero, ennemi):
         affichage_texte(menu_combat, " Action ")
         choix = input("->")
         if choix == "1":
-            hero.attaque(ennemi)
+            hero._att(ennemi)
         elif choix == "2":
             print(f"{hero.nom} ne fait rien")
         elif choix == "3":
@@ -32,6 +32,6 @@ def combat_simple(hero, ennemi):
         if not ennemi.ko:
             choix_ennemi = randint(0, 5)
             if choix_ennemi < 4:
-                ennemi.attaque(hero)
+                ennemi._att(hero)
             if choix_ennemi >= 4:
                 print(f"{ennemi.nom} ne fait rien")

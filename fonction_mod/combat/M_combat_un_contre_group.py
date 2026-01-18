@@ -23,7 +23,7 @@ def combat_un_contre_group(hero, ennemy: list):
                 adversaire_index = int(input("Choisissez un adversaire: "))
                 if 0 <= adversaire_index < len(adver_list):
                     ennemi_cible = adver_list[adversaire_index]
-                    hero.attaque(ennemi_cible)
+                    hero._att(ennemi_cible)
                     if ennemi_cible.ko is True:
                         adver_list.pop(ennemi_cible)
                 else:
@@ -48,7 +48,7 @@ def combat_un_contre_group(hero, ennemy: list):
             if not i.ko:
                 choix_ennemi = randint(0, 5)
                 if choix_ennemi < 4:
-                    i.attaque(hero)
+                    i._att(hero)
                 if choix_ennemi >= 4:
                     print(f"{i.nom} ne fait rien")
                 # Vérifier si le hero est ko
